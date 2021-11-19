@@ -21,13 +21,13 @@
      the abbreviated format. -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.pictroom.android">
+    package="com.ychen9.pwa">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
-        android:name="Application"
+        android:name="com.ychen9.pwa.Application"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/appName"
@@ -39,11 +39,11 @@
 
         <meta-data
             android:name="com.huawei.hms.client.appid"
-            android:value="appid=104861171">
+            android:value="appid=102882631">
         </meta-data>
         <meta-data
             android:name="com.huawei.hms.client.cpid"
-            android:value="cpid=890001000004106131">
+            android:value="cpid=890001000000000755">
         </meta-data>
         <meta-data
             android:name="asset_statements"
@@ -67,7 +67,7 @@
             </activity>
         
 
-        <activity android:name="LauncherActivity"
+        <activity android:name="com.ychen9.pwa.LauncherActivity"
             android:alwaysRetainTaskState="true"
             android:label="@string/launcherName">
             <meta-data
@@ -171,7 +171,7 @@
         </provider>
 
         <service
-            android:name=".DelegationService"
+            android:name="com.ychen9.pwa.DelegationService"
             android:enabled="@bool/enableNotification"
             android:exported="@bool/enableNotification">
 
@@ -183,7 +183,7 @@
             </intent-filter>
         </service>
         <service
-            android:name=".MyPushService"
+            android:name="com.ychen9.pwa.MyPushService"
             android:exported="false"
             tools:ignore="Instantiatable">
             <intent-filter>

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Administrator\\Downloads\\Futurewei\\TWA IAP assetlinks test\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-pt\\values-pt.xml",
+            "outputFile": "C:\\Users\\Administrator\\Downloads\\Futurewei\\TWA - OneSignal\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-pt\\values-pt.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\89a0df44bcec2ea00312b402fc8cf2b1\\core-1.5.0\\res\\values-pt\\values-pt.xml",
@@ -91,7 +91,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\48341a354be8c3be469247c9f0b2b76e\\jetified-push-5.1.1.301\\res\\values-pt\\values-pt.xml",
+                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\9cd854a1a75512138130e21d274adba6\\jetified-push-5.3.0.304\\res\\values-pt\\values-pt.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

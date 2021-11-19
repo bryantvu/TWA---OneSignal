@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.pictroom.android" android:versionCode="1" android:versionName="1.0.0.0">
+<?xml version="1.0" encoding="UTF-8"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.ychen9.pwa" android:versionCode="1" android:versionName="1.0.0.0">
   <uses-sdk android:minSdkVersion="19" android:targetSdkVersion="30"/>
   <uses-permission android:name="android.permission.INTERNET"/>
   <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
@@ -9,26 +9,48 @@
       <data android:scheme="https"/>
     </intent>
   </queries>
-  <permission android:name="com.pictroom.android.permission.PROCESS_PUSH_MSG" android:protectionLevel="signature"/>
-  <permission android:name="com.pictroom.android.permission.PUSH_PROVIDER" android:protectionLevel="signature"/>
-  <permission android:name="com.pictroom.android.permission.PUSH_WRITE_PROVIDER" android:protectionLevel="signature"/>
-  <uses-permission android:name="com.pictroom.android.permission.PROCESS_PUSH_MSG"/>
-  <uses-permission android:name="com.pictroom.android.permission.PUSH_PROVIDER"/>
+  <permission android:name="com.ychen9.pwa.permission.PROCESS_PUSH_MSG" android:protectionLevel="signature"/>
+  <permission android:name="com.ychen9.pwa.permission.PUSH_PROVIDER" android:protectionLevel="signature"/>
+  <permission android:name="com.ychen9.pwa.permission.PUSH_WRITE_PROVIDER" android:protectionLevel="signature"/>
+  <uses-permission android:name="com.ychen9.pwa.permission.PROCESS_PUSH_MSG"/>
+  <uses-permission android:name="com.ychen9.pwa.permission.PUSH_PROVIDER"/>
   <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
   <uses-permission android:name="com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA"/>
   <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+  <permission android:name="com.ychen9.pwa.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+  <uses-permission android:name="com.ychen9.pwa.permission.C2D_MESSAGE"/>
+  <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+  <uses-permission android:name="android.permission.WAKE_LOCK"/>
+  <uses-permission android:name="android.permission.VIBRATE"/>
+  <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+  <uses-permission android:name="com.sec.android.provider.badge.permission.READ"/>
+  <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE"/>
+  <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS"/>
+  <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT"/>
+  <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE"/>
+  <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE"/>
+  <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT"/>
+  <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE"/>
+  <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE"/>
+  <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS"/>
+  <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS"/>
+  <uses-permission android:name="android.permission.READ_APP_BADGE"/>
+  <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS"/>
+  <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS"/>
+  <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ"/>
+  <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE"/>
   <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
-  <application android:name="com.pictroom.android.Application" android:allowBackup="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:debuggable="true" android:icon="@mipmap/ic_launcher" android:label="@string/appName" android:manageSpaceActivity="com.google.androidbrowserhelper.trusted.ManageDataLauncherActivity" android:supportsRtl="true" android:testOnly="true" android:theme="@android:style/Theme.Translucent.NoTitleBar">
-    <meta-data android:name="com.huawei.hms.client.appid" android:value="appid=104861171"/>
-    <meta-data android:name="com.huawei.hms.client.cpid" android:value="cpid=890001000004106131"/>
+  <application android:name="com.ychen9.pwa.Application" android:allowBackup="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:debuggable="true" android:icon="@mipmap/ic_launcher" android:label="@string/appName" android:manageSpaceActivity="com.google.androidbrowserhelper.trusted.ManageDataLauncherActivity" android:supportsRtl="true" android:testOnly="true" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+    <meta-data android:name="com.huawei.hms.client.appid" android:value="appid=102882631"/>
+    <meta-data android:name="com.huawei.hms.client.cpid" android:value="cpid=890001000000000755"/>
     <meta-data android:name="asset_statements" android:resource="@string/assetStatements"/>
     <meta-data android:name="web_manifest_url" android:value="@string/webManifestUrl"/>
     <meta-data android:name="twa_generator" android:value="@string/generatorApp"/>
     <activity android:name="com.google.androidbrowserhelper.trusted.ManageDataLauncherActivity">
       <meta-data android:name="android.support.customtabs.trusted.MANAGE_SPACE_URL" android:value="@string/launchUrl"/>
     </activity>
-    <activity android:name="com.pictroom.android.LauncherActivity" android:alwaysRetainTaskState="true" android:label="@string/launcherName">
+    <activity android:name="com.ychen9.pwa.LauncherActivity" android:alwaysRetainTaskState="true" android:label="@string/launcherName">
       <meta-data android:name="android.support.customtabs.trusted.ADDITIONAL_TRUSTED_ORIGINS" android:resource="@array/additional_trusted_origins"/>
       <meta-data android:name="android.support.customtabs.trusted.DEFAULT_URL" android:value="@string/launchUrl"/>
       <meta-data android:name="android.support.customtabs.trusted.STATUS_BAR_COLOR" android:resource="@color/colorPrimary"/>
@@ -67,13 +89,13 @@
     <provider android:name="androidx.core.content.FileProvider" android:authorities="@string/providerAuthority" android:exported="false" android:grantUriPermissions="true">
       <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/filepaths"/>
     </provider>
-    <service android:name="com.pictroom.android.DelegationService" android:enabled="@bool/enableNotification" android:exported="@bool/enableNotification">
+    <service android:name="com.ychen9.pwa.DelegationService" android:enabled="@bool/enableNotification" android:exported="@bool/enableNotification">
       <intent-filter>
         <action android:name="android.support.customtabs.trusted.TRUSTED_WEB_ACTIVITY_SERVICE"/>
         <category android:name="android.intent.category.DEFAULT"/>
       </intent-filter>
     </service>
-    <service android:name="com.pictroom.android.MyPushService" android:exported="false">
+    <service android:name="com.ychen9.pwa.MyPushService" android:exported="false">
       <intent-filter>
         <action android:name="com.huawei.push.action.MESSAGING_EVENT"/>
       </intent-filter>
@@ -81,13 +103,13 @@
     <activity android:name="com.google.androidbrowserhelper.locationdelegation.PermissionRequestActivity"/>
     <meta-data android:name="com.huawei.hms.client.service.name:ads-lite" android:value="ads-lite:13.4.32.300"/>
     <meta-data android:name="com.huawei.hms.client.service.name:ads-consent" android:value="ads-consent:3.4.32.300"/>
-    <receiver android:name="com.huawei.hms.support.api.push.PushMsgReceiver" android:directBootAware="true" android:permission="com.pictroom.android.permission.PROCESS_PUSH_MSG">
+    <receiver android:name="com.huawei.hms.support.api.push.PushMsgReceiver" android:directBootAware="true" android:permission="com.ychen9.pwa.permission.PROCESS_PUSH_MSG">
       <intent-filter>
         <action android:name="com.huawei.intent.action.PUSH_DELAY_NOTIFY"/>
         <action android:name="com.huawei.intent.action.PUSH"/>
       </intent-filter>
     </receiver>
-    <receiver android:name="com.huawei.hms.support.api.push.PushReceiver" android:directBootAware="true" android:permission="com.pictroom.android.permission.PROCESS_PUSH_MSG">
+    <receiver android:name="com.huawei.hms.support.api.push.PushReceiver" android:directBootAware="true" android:permission="com.ychen9.pwa.permission.PROCESS_PUSH_MSG">
       <intent-filter>
         <action android:name="com.huawei.android.push.intent.REGISTRATION"/>
         <action android:name="com.huawei.android.push.intent.RECEIVE"/>
@@ -99,9 +121,13 @@
         <action android:name="com.huawei.push.msg.PASSBY_MSG"/>
       </intent-filter>
     </service>
-    <provider android:name="com.huawei.hms.support.api.push.PushProvider" android:authorities="com.pictroom.android.huawei.push.provider" android:exported="true" android:permission="com.pictroom.android.permission.PUSH_PROVIDER" android:readPermission="com.pictroom.android.permission.PUSH_PROVIDER" android:writePermission="com.pictroom.android.permission.PUSH_WRITE_PROVIDER"/>
+    <provider android:name="com.huawei.hms.support.api.push.PushProvider" android:authorities="com.ychen9.pwa.huawei.push.provider" android:exported="true" android:permission="com.ychen9.pwa.permission.PUSH_PROVIDER" android:readPermission="com.ychen9.pwa.permission.PUSH_PROVIDER" android:writePermission="com.ychen9.pwa.permission.PUSH_WRITE_PROVIDER"/>
     <meta-data android:name="com.huawei.hms.client.service.name:push" android:value="push:5.3.0.303"/>
     <meta-data android:name="com.huawei.hms.min_api_level:push:push" android:value="1"/>
+    <service android:name="com.huawei.agconnect.core.ServiceDiscovery" android:exported="false">
+      <meta-data android:name="com.huawei.agconnect.applinking.AppLinkingRegistrar" android:value="com.huawei.agconnect.core.ServiceRegistrar"/>
+      <meta-data android:name="com.huawei.agconnect.credential.CredentialServiceRegistrar:100" android:value="com.huawei.agconnect.core.ServiceRegistrar"/>
+    </service>
     <meta-data android:name="com.huawei.hms.client.service.name:hianalytics" android:value="hianalytics:5.3.1.300"/>
     <meta-data android:name="com.huawei.hms.min_api_level:hianalytics:hianalytics" android:value="1"/>
     <receiver android:name="com.huawei.hms.analytics.receiver.HiAnalyticsSvcEvtReceiver" android:exported="false">
@@ -109,12 +135,75 @@
         <action android:name="com.huawei.hms.analytics.pps.event"/>
       </intent-filter>
     </receiver>
+    <uses-library android:name="org.apache.http.legacy" android:required="false"/>
     <meta-data android:name="com.huawei.hms.client.service.name:iap" android:value="iap:6.0.0.300"/>
-    <service android:name="com.huawei.agconnect.core.ServiceDiscovery" android:exported="false">
-      <meta-data android:name="com.huawei.agconnect.applinking.AppLinkingRegistrar" android:value="com.huawei.agconnect.core.ServiceRegistrar"/>
-      <meta-data android:name="com.huawei.agconnect.credential.CredentialServiceRegistrar:100" android:value="com.huawei.agconnect.core.ServiceRegistrar"/>
+    <provider android:name="com.huawei.hms.aaid.InitProvider" android:authorities="com.ychen9.pwa.aaidinitprovider" android:exported="false" android:initOrder="500"/>
+    <meta-data android:name="com.huawei.hms.client.service.name:opendevice" android:value="opendevice:5.1.1.306"/>
+    <meta-data android:name="com.huawei.hms.min_api_level:opendevice:push" android:value="1"/>
+    <meta-data android:name="com.huawei.hms.client.service.name:base" android:value="base:5.3.0.304"/>
+    <meta-data android:name="com.huawei.hms.min_api_level:base:hmscore" android:value="1"/>
+    <meta-data android:name="availableLoaded" android:value="yes"/>
+    <provider android:name="com.huawei.hms.update.provider.UpdateProvider" android:authorities="com.ychen9.pwa.hms.update.provider" android:exported="false" android:grantUriPermissions="true"/>
+    <provider android:name="com.huawei.hms.device.provider.CheckHmsProvider" android:authorities="com.ychen9.pwa.hms.device.validate.spoofprovider" android:exported="false" android:grantUriPermissions="false"/>
+    <provider android:name="com.huawei.agconnect.core.provider.AGConnectInitializeProvider" android:authorities="com.ychen9.pwa.AGCInitializeProvider" android:exported="false"/>
+    <meta-data android:name="onesignal_app_id" android:value="ae89de39-879b-4a52-bea5-cdf4e32e722e"/>
+    <meta-data android:name="onesignal_google_project_number" android:value="str:REMOTE"/>
+    <receiver android:name="com.onesignal.GcmBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+      <intent-filter android:priority="999">
+        <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+        <category android:name="com.ychen9.pwa"/>
+      </intent-filter>
+    </receiver>
+    <receiver android:name="com.onesignal.NotificationOpenedReceiver"/>
+    <service android:name="com.onesignal.HmsMessageServiceOneSignal" android:exported="false">
+      <intent-filter>
+        <action android:name="com.huawei.push.action.MESSAGING_EVENT"/>
+      </intent-filter>
+    </service>
+    <activity android:name="com.onesignal.NotificationOpenedActivityHMS" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+      <intent-filter>
+        <action android:name="android.intent.action.VIEW"/>
+      </intent-filter>
+    </activity>
+    <service android:name="com.onesignal.GcmIntentService"/>
+    <service android:name="com.onesignal.GcmIntentJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+    <service android:name="com.onesignal.RestoreJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+    <service android:name="com.onesignal.RestoreKickoffJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+    <service android:name="com.onesignal.SyncService" android:stopWithTask="true"/>
+    <service android:name="com.onesignal.SyncJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+    <activity android:name="com.onesignal.PermissionsActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+    <service android:name="com.onesignal.NotificationRestoreService"/>
+    <receiver android:name="com.onesignal.BootUpReceiver">
+      <intent-filter>
+        <action android:name="android.intent.action.BOOT_COMPLETED"/>
+        <action android:name="android.intent.action.QUICKBOOT_POWERON"/>
+      </intent-filter>
+    </receiver>
+    <receiver android:name="com.onesignal.UpgradeReceiver">
+      <intent-filter>
+        <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+      </intent-filter>
+    </receiver>
+    <service android:name="com.google.firebase.messaging.FirebaseMessagingService" android:exported="true">
+      <intent-filter android:priority="-500">
+        <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+      </intent-filter>
+    </service>
+    <service android:name="com.google.firebase.components.ComponentDiscoveryService" android:exported="false">
+      <meta-data android:name="com.google.firebase.components:com.google.firebase.iid.Registrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+    </service>
+    <receiver android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:exported="true" android:permission="com.google.android.c2dm.permission.SEND">
+      <intent-filter>
+        <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+      </intent-filter>
+    </receiver>
+    <service android:name="com.google.firebase.iid.FirebaseInstanceIdService" android:exported="true">
+      <intent-filter android:priority="-500">
+        <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+      </intent-filter>
     </service>
     <activity android:name="com.google.android.gms.common.api.GoogleApiActivity" android:exported="false" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+    <provider android:name="com.google.firebase.provider.FirebaseInitProvider" android:authorities="com.ychen9.pwa.firebaseinitprovider" android:exported="false" android:initOrder="100"/>
     <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
     <meta-data android:name="com.huawei.hms.client.service.name:ads-banner" android:value="ads-banner:13.4.32.300"/>
     <meta-data android:name="com.huawei.hms.client.service.name:ads-template" android:value="ads-template:13.4.32.300"/>
@@ -123,23 +212,13 @@
     <meta-data android:name="com.huawei.hms.client.service.name:ads-reward" android:value="ads-reward:13.4.32.300"/>
     <meta-data android:name="com.huawei.hms.client.service.name:ads-lang" android:value="ads-lang:13.4.32.300"/>
     <meta-data android:name="com.huawei.hms.client.service.name:ads-splash" android:value="ads-splash:13.4.32.300"/>
-    <provider android:name="com.huawei.hms.aaid.InitProvider" android:authorities="com.pictroom.android.aaidinitprovider" android:exported="false" android:initOrder="500"/>
-    <meta-data android:name="com.huawei.hms.client.service.name:opendevice" android:value="opendevice:5.1.1.306"/>
-    <meta-data android:name="com.huawei.hms.min_api_level:opendevice:push" android:value="1"/>
-    <uses-library android:name="org.apache.http.legacy" android:required="false"/>
-    <meta-data android:name="com.huawei.hms.client.service.name:base" android:value="base:5.3.0.304"/>
-    <meta-data android:name="com.huawei.hms.min_api_level:base:hmscore" android:value="1"/>
-    <meta-data android:name="availableLoaded" android:value="yes"/>
-    <provider android:name="com.huawei.hms.update.provider.UpdateProvider" android:authorities="com.pictroom.android.hms.update.provider" android:exported="false" android:grantUriPermissions="true"/>
-    <provider android:name="com.huawei.hms.device.provider.CheckHmsProvider" android:authorities="com.pictroom.android.hms.device.validate.spoofprovider" android:exported="false" android:grantUriPermissions="false"/>
-    <provider android:name="com.huawei.agconnect.core.provider.AGConnectInitializeProvider" android:authorities="com.pictroom.android.AGCInitializeProvider" android:exported="false"/>
     <meta-data android:name="com.huawei.hms.client.service.name:ads-base" android:value="ads-base:13.4.32.300"/>
     <activity android:name="com.huawei.openalliance.ad.activity.PPSLauncherActivity" android:exported="true" android:theme="@android:style/Theme.Translucent.NoTitleBar">
       <intent-filter>
         <action android:name="android.intent.action.VIEW"/>
         <category android:name="android.intent.category.DEFAULT"/>
         <category android:name="android.intent.category.BROWSABLE"/>
-        <data android:host="com.pictroom.android" android:scheme="hwpps"/>
+        <data android:host="com.ychen9.pwa" android:scheme="hwpps"/>
       </intent-filter>
       <meta-data android:name="hwc-theme" android:value="androidhwext:style/Theme.Emui.Translucent.NoTitleBar"/>
     </activity>
@@ -158,11 +237,11 @@
     <activity android:name="com.huawei.updatesdk.support.pm.PackageInstallerActivity" android:configChanges="orientation|keyboardHidden|screenSize" android:exported="false" android:theme="@android:style/Theme.Translucent.NoTitleBar">
       <meta-data android:name="hwc-theme" android:value="androidhwext:style/Theme.Emui.Translucent"/>
     </activity>
-    <provider android:name="com.huawei.updatesdk.fileprovider.UpdateSdkFileProvider" android:authorities="com.pictroom.android.updateSdk.fileProvider" android:exported="false" android:grantUriPermissions="true"/>
+    <provider android:name="com.huawei.updatesdk.fileprovider.UpdateSdkFileProvider" android:authorities="com.ychen9.pwa.updateSdk.fileProvider" android:exported="false" android:grantUriPermissions="true"/>
     <activity android:name="com.huawei.hms.activity.BridgeActivity" android:configChanges="orientation|locale|layoutDirection|fontScale|screenSize|smallestScreenSize|screenLayout|uiMode" android:excludeFromRecents="true" android:exported="false" android:hardwareAccelerated="true" android:screenOrientation="behind" android:theme="@style/Base_Translucent">
       <meta-data android:name="hwc-theme" android:value="androidhwext:style/Theme.Emui.Translucent"/>
     </activity>
     <activity android:name="com.huawei.hms.activity.EnableServiceActivity" android:configChanges="orientation|keyboardHidden|screenSize|smallestScreenSize|screenLayout" android:exported="false"/>
-    <meta-data android:name="com.huawei.hms.client.appid" android:value="appid=104861171"/>
+    <meta-data android:name="com.huawei.hms.client.appid" android:value="appid=102882631"/>
   </application>
 </manifest>

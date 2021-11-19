@@ -4,7 +4,7 @@
     "type": "APK",
     "kind": "Directory"
   },
-  "applicationId": "com.pictroom.android",
+  "applicationId": "com.ychen9.pwa",
   "variantName": "processDebugResources",
   "elements": [
     {

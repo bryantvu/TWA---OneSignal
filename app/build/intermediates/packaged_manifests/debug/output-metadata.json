@@ -4,7 +4,7 @@
     "type": "PACKAGED_MANIFESTS",
     "kind": "Directory"
   },
-  "applicationId": "com.pictroom.android",
+  "applicationId": "com.ychen9.pwa",
   "variantName": "debug",
   "elements": [
     {
